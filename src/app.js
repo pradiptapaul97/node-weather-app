@@ -95,17 +95,6 @@ app.get('/*',(req,res)=>{
     })
 })
 
-// app.get('/help',(req,res)=>{
-//     res.send([
-//         {
-//             name:'pradipta'
-//         },
-//         {
-//             name:'ananya'
-//         }
-//     ])
-// })
-
 
 app.listen(port,()=>{
     console.log('server start in localhost:'+port);
