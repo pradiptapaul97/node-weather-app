@@ -17,14 +17,13 @@ const forecast = (lat,long,callback) =>{
         else
         {
             const currentw = body.current;
-            // callback(undefined,{
-            //     City:body.location.name,
-            //     weather:currentw.weather_descriptions[0],
-            //     currently:currentw.temperature,
-            //     feels_like :currentw.feelslike 
-            // })
-            
-            callback(undefined,'City :- '+body.location.name+'. weather :- '+currentw.weather_descriptions[0] + ". It is currently " + currentw.temperature + " degress out. It feels like " + currentw.feelslike + " degress out");
+            callback(undefined,'City :- '+body.location.name+
+            '. weather :- '+currentw.weather_descriptions[0] + 
+            '. It is currently ' + currentw.temperature + ' degress out.'+
+            ' It feels like ' + currentw.feelslike + ' degress out.' +
+            'Wind speed ' + currentw.wind_speed + ' .'+
+            'Wind degree ' + currentw.wind_degree + ' .'+
+            'Humidity '+ currentw.humidity + ' .');
 
 
         }
